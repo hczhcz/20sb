@@ -22,11 +22,10 @@ def kp(key):
     sleep(0.01)
 
 
-with uinput.UInput() as ui:
-    while True:
-        for x in range(n_up):
-            kp(e.KEY_UP)
-            kp(e.KEY_LEFT)
-        for x in range(n_down):
-            kp(e.KEY_DOWN)
-            kp(e.KEY_LEFT)
+while True:
+    for x in range(n_up):
+        kp(e.KEY_UP)
+        kp(e.KEY_LEFT)
+    for x in range(n_down):
+        kp(e.KEY_DOWN)
+        kp(e.KEY_LEFT)
